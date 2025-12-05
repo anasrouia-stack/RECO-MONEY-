@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RECO MONEY - Recouvrement & Simulateur</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen text-gray-800">
+
+  <!-- SECTION HERO -->
+  <div class="bg-blue-700 text-white py-10 px-6 text-center shadow-lg">
+    <h1 class="text-4xl font-bold mb-3">RECO MONEY</h1>
+    <p class="text-lg">Service de recouvrement d’argent et accompagnement juridique</p>
+  </div>
+
+  <!-- SECTION PHOTOS -->
+  <div class="px-6 py-6">
+    <h2 class="text-2xl font-bold mb-4">Notre Mission</h2>
+    <p class="mb-4">
+      RECO MONEY vous aide à récupérer votre argent rapidement, légalement et en toute sécurité.
+      Nous mettons à votre disposition un service professionnel basé sur l'expérience et
+      la confiance.
+    </p>
+
+    <!-- Photos -->
+    <div class="grid grid-cols-1 gap-4">
+      <img src="https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg"
+           class="rounded-lg shadow">
+      <img src="https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg"
+           class="rounded-lg shadow">
+    </div>
+  </div>
+
+  <!-- SECTION SERVICES -->
+  <div class="px-6 py-6 bg-white shadow-inner">
+    <h2 class="text-2xl font-bold mb-4">Nos Services</h2>
+    <ul class="list-disc ml-6 space-y-2 text-lg">
+      <li>Recouvrement d’argent entre particuliers</li>
+      <li>Accompagnement dans les démarches juridiques</li>
+      <li>Négociation amiable et confidentielle</li>
+      <li>Suivi personnalisé</li>
+    </ul>
+  </div>
+
+  <!-- SECTION WHATSAPP -->
+  <div class="px-6 py-6 text-center">
+    <a href="https://wa.me/TONNUMERO"
+       class="bg-green-600 text-white px-6 py-3 rounded-lg text-xl font-semibold shadow hover:bg-green-700 transition">
+      📱 Contact WhatsApp
+    </a>
+  </div>
+
+  <!-- SIMULATEUR -->
+  <div class="px-6 py-6">
+    <h2 class="text-2xl font-bold mb-4 text-center">💰 Simulateur RECO MONEY</h2>
+
+    <div class="bg-white w-full max-w-md mx-auto rounded-2xl shadow-lg p-6">
+
+      <label class="block font-semibold mb-1">Montant (€)</label>
+      <input id="amount" type="number"
+        class="w-full p-3 border rounded-lg mb-4 focus:ring focus:ring-blue-300 outline-none"
+        placeholder="Ex : 1000">
+
+      <label class="block font-semibold mb-1">Durée (jours)</label>
+      <input id="days" type="number"
+        class="w-full p-3 border rounded-lg mb-4 focus:ring focus:ring-blue-300 outline-none"
+        placeholder="Ex : 30">
+
+      <button id="calculate"
+        class="w-full bg-blue-600 text-white font-semibold p-3 rounded-lg text-lg shadow hover:bg-blue-700 active:scale-95 transition">
+        Calculer
+      </button>
+
+      <div id="result" class="mt-6 p-4 bg-gray-50 border rounded-lg text-lg"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
